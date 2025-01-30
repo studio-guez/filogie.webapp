@@ -1,0 +1,1 @@
+import{d as e,v as s,t as o,_ as t}from"./D5vaX5HR.js";const n={class:"v-index"},_=e({__name:"index",props:{message:{}},setup(a){return(c,d)=>(o(),s("section",n," Filogie "))}}),r=t(_,[["__scopeId","data-v-5eb6d4d7"]]);export{r as default};

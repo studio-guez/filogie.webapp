@@ -55,7 +55,7 @@
 
       <div class="app-grid-coll-container">
         <div class="app-grid-coll-0-24 app-grid-coll-reg-2-24"></div>
-        <div class="app-grid-coll-24-24 app-grid-coll-reg-22-24 app-grid-with-gutter">
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24 app-grid-with-gutter">
           <InfomaniakForm/>
         </div>
       </div>
@@ -99,7 +99,11 @@
   }
 }
 
-.v-index__content {
+.v-index {
   padding-bottom: 25vh;
+}
+
+.v-index__content {
+  padding-bottom: 2rem;
 }
 </style>

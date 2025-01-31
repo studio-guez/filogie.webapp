@@ -1,0 +1,87 @@
+@use "_scss-params";
+
+.app-grid-with-gutter {
+  box-sizing: border-box;
+  padding-right: var(--app-gutter);
+  padding-left: var(--app-gutter);
+}
+
+// coll
+
+.app-grid-coll-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &.app-grid-coll-container--center {
+    justify-content: center;
+  }
+}
+
+.app-grid-coll-0-24  {display: none}
+.app-grid-coll-1-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 1);}
+.app-grid-coll-2-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 2);}
+.app-grid-coll-3-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 3);}
+.app-grid-coll-4-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 4);}
+.app-grid-coll-5-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 5);}
+.app-grid-coll-6-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 6);}
+.app-grid-coll-7-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 7);}
+.app-grid-coll-8-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 8);}
+.app-grid-coll-9-24  {display: block; box-sizing: border-box;width:   calc(100% / 24 * 9);}
+.app-grid-coll-10-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 10);}
+.app-grid-coll-11-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 11);}
+.app-grid-coll-12-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 12);}
+.app-grid-coll-13-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 13);}
+.app-grid-coll-14-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 14);}
+.app-grid-coll-15-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 15);}
+.app-grid-coll-16-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 16);}
+.app-grid-coll-17-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 17);}
+.app-grid-coll-18-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 18);}
+.app-grid-coll-19-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 19);}
+.app-grid-coll-20-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 20);}
+.app-grid-coll-21-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 21);}
+.app-grid-coll-22-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 22);}
+.app-grid-coll-23-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 23);}
+.app-grid-coll-24-24 {display: block; box-sizing: border-box;width:  calc(100% / 24 * 24);}
+
+@media (min-width: scss-params.$app-breakpoint-sm) {
+  .app-grid-coll-reg-0-24  {display: none}
+  .app-grid-coll-reg-1-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 1);}
+  .app-grid-coll-reg-2-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 2);}
+  .app-grid-coll-reg-3-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 3);}
+  .app-grid-coll-reg-4-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 4);}
+  .app-grid-coll-reg-5-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 5);}
+  .app-grid-coll-reg-6-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 6);}
+  .app-grid-coll-reg-7-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 7);}
+  .app-grid-coll-reg-8-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 8);}
+  .app-grid-coll-reg-9-24  {display: block; box-sizing: border-box;width: calc(100% / 24 * 9);}
+  .app-grid-coll-reg-10-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 10);}
+  .app-grid-coll-reg-11-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 11);}
+  .app-grid-coll-reg-12-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 12);}
+  .app-grid-coll-reg-13-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 13);}
+  .app-grid-coll-reg-14-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 14);}
+  .app-grid-coll-reg-15-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 15);}
+  .app-grid-coll-reg-16-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 16);}
+  .app-grid-coll-reg-17-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 17);}
+  .app-grid-coll-reg-18-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 18);}
+  .app-grid-coll-reg-19-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 19);}
+  .app-grid-coll-reg-20-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 20);}
+  .app-grid-coll-reg-21-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 21);}
+  .app-grid-coll-reg-22-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 22);}
+  .app-grid-coll-reg-23-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 23);}
+  .app-grid-coll-reg-24-24 {display: block; box-sizing: border-box;width: calc(100% / 24 * 24);}
+}
+
+.app-grid-coll-max_width-35rem {
+  max-width: 35rem;
+}
+
+.app-first-and-last-child-remove-margin {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

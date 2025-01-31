@@ -78,9 +78,16 @@
 <style lang="scss" scoped >
 @use '@/assets/_scss-params';
 
+.v-index {
+  padding-top: 22vw;
+}
+
 .v-index__video {
   display: block;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .v-index__content__order-3 {

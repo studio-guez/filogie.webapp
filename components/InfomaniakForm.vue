@@ -1,6 +1,8 @@
 <template>
-    <section class="v-infomaniak-form"
-    >
+
+  <section class="v-infomaniak-form app-first-and-last-child-remove-margin"
+  >
+    <h3>Laissez vos coordonnées pour recevoir nos informations</h3>
       <form method="post"
             action="https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/19771/submit"
             >
@@ -34,7 +36,7 @@
           </div>
 
           <div class="app-grid-coll-18-24"></div>
-          <div class="v-infomaniak-form__recapcha app-grid-coll-6-24">
+          <div class="v-infomaniak-form__recapcha app-grid-coll-18-24 app-grid-coll-reg-6-24">
             <label data-mcaptcha_url="https://captcha.infomaniak.com/widget/?sitekey=wKJaAigS1e48fWgqtjvg5w7rKA6QIwmy"
                    for="mcaptcha__token" id="mcaptcha__token-label">
               <input type="text" name="mcaptcha__token" id="mcaptcha__token"/>

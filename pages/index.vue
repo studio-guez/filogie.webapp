@@ -2,7 +2,7 @@
     <section class="v-index"
     >
       <video class="v-index__video"
-             src="/videos/3001-FILOGIE_animation_bandeau_BD.mp4"
+             src="/videos/3001-FILOGIE_animation_bandeau_HD.mp4"
              muted
              loop
              autoplay

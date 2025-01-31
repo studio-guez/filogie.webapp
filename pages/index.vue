@@ -56,6 +56,17 @@
       <div class="app-grid-coll-container">
         <div class="app-grid-coll-0-24 app-grid-coll-reg-2-24"></div>
         <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24 app-grid-with-gutter">
+          <a class="v-index__mailto app-grid-coll-container app-grid-coll-container--center"
+             href="mailto:info@modus-ge.ch"
+          >
+            <div class="v-index__mailto__text">
+              <h4>Vous avez des questions&nbsp;?
+              <br>Vous pouvez nous écrire à cette adresse&nbsp;
+              </h4>
+            </div>
+            <button class="v-index__mailto__button">info@modus-ge.ch</button>
+          </a>
+
           <InfomaniakForm/>
         </div>
       </div>
@@ -112,5 +123,19 @@
 
 .v-index__content {
   padding-bottom: 2rem;
+}
+
+.v-index__mailto {
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.v-index__mailto__button {
+  display: block;
+  background: #FFE103;
+  border: none;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
 }
 </style>

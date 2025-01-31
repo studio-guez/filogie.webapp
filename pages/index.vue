@@ -94,4 +94,8 @@ const props = defineProps<{
     order: initial;
   }
 }
+
+.v-index__content {
+  padding-bottom: 25vh;
+}
 </style>

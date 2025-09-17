@@ -79,7 +79,10 @@
 
 
 <script setup lang="ts">
-
+useSeoMeta({
+    title: 'FILOGIE',
+    description: 'Fondation Immobilière pour repenser le Logement par l’Innovation et l’Expérimentation.',
+})
 </script>
 
 

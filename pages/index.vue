@@ -9,9 +9,9 @@
       </div>
 
       <div class="v-index__content app-grid-coll-container">
-        <div class="app-grid-coll-0-24 app-grid-coll-reg-6-24 app-grid-with-gutter"></div>
-        <div class="app-grid-coll-0-24 app-grid-coll-reg-0-24"></div>
-        <div class="app-grid-coll-24-24 app-grid-coll-reg-14-24 app-grid-with-gutter">
+        <img src="/header_bg/Image_AI_02.png" class="v-index__content__bg">
+        <div class="app-grid-coll-0-24 app-grid-coll-reg-8-24 app-grid-with-gutter"></div>
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24 app-grid-with-gutter">
           <div style="margin-top: 1rem" class="app-first-and-last-child-remove-margin">
             <p>La Fondation Immobilière pour repenser le Logement par l’Innovation et l’Expérimentation (FILOGIE) est née d'une volonté de proposer des solutions de logement adaptées aux enjeux de société contemporains et à venir. Face aux défis croissants liés à la production de logements abordables, durables et inclusifs, FILOGIE se fixe pour mission d’innover dans le domaine de l’habitat, en développant des projets et réalisations répondant à l’évolution des besoins sociaux, économiques et environnementaux.</p>
             <p>Partant du constat que le modèle familial dominant du second après-guerre – celui de la famille nucléaire – bien qu’encore présent, n’est plus majoritaire, FILOGIE s’attache à répondre aux attentes de nouveaux modes de vie et à anticiper les évolutions et les besoins futurs en matière de logement abordable. Afin de favoriser une culture de l’innovation, elle promeut aussi des études prospectives, des publications, ainsi que l’organisation d’événements et de manifestations, lui permettant de produire et de partager des connaissances approfondies sur les enjeux actuels et à venir.</p>
@@ -20,8 +20,8 @@
       </div>
 
       <div class="app-grid-coll-container categories-section">
-        <div class="categories-section__infos app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter">
-          <div class="categories-section__infos__titles">
+        <div class="categories-section__infos app-grid-coll-24-24 app-grid-coll-reg-8-24">
+          <div class="categories-section__infos__titles app-grid-with-gutter">
             <h4>
               Prospectif
             </h4>
@@ -32,15 +32,63 @@
               Diffusion
             </h4>
           </div>
-          <div class="categories-section__infos__text">
-            <p>Le volet prospectif et de connaissance de Filogie constitue un espace d’observation, d’analyse et d’expérimentation au service des enjeux du logement. En mobilisant des données fiables et des outils de visualisation innovants, il permet d’anticiper les évolutions démographiques, économiques ou technologiques qui façonneront les besoins en habitat. Cette approche prospective vise à éclairer les décisions publiques et privées, tout en nourrissant une vision à long terme du développement résidentiel abordable.</p>
-            <p>Au croisement de la recherche et de l’innovation, la fondation soutient la production de connaissances nouvelles et la mise à l’épreuve d’idées audacieuses pour anticiper l’évolution de la société. Des projets de recherche appliquée explorent les transitions en cours : modes de vie émergents, technologies constructives, logiques de durabilité ou modèles économiques alternatifs. Des laboratoires d’innovation permettent de tester des concepts et de prototyper des solutions concrètes, dans une logique d’ouverture et de co-création.</p>
+          <div class="categories-section__infos__text app-grid-with-gutter">
+            <p class="app-text-small">Le volet prospectif et de connaissance de Filogie constitue un espace d’observation, d’analyse et d’expérimentation au service des enjeux du logement. En mobilisant des données fiables et des outils de visualisation innovants, il permet d’anticiper les évolutions démographiques, économiques ou technologiques qui façonneront les besoins en habitat. Cette approche prospective vise à éclairer les décisions publiques et privées, tout en nourrissant une vision à long terme du développement résidentiel abordable.</p>
+            <p class="app-text-small">Au croisement de la recherche et de l’innovation, la fondation soutient la production de connaissances nouvelles et la mise à l’épreuve d’idées audacieuses pour anticiper l’évolution de la société. Des projets de recherche appliquée explorent les transitions en cours : modes de vie émergents, technologies constructives, logiques de durabilité ou modèles économiques alternatifs. Des laboratoires d’innovation permettent de tester des concepts et de prototyper des solutions concrètes, dans une logique d’ouverture et de co-création.</p>
           </div>
         </div>
-        <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24">
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24 app-grid-with-gutter">
           <Categories/>
         </div>
       </div>
+
+
+      <div class="app-grid-coll-container">
+        <div class="app-grid-coll-0-24 app-grid-coll-reg-8-24"/>
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24">
+          <div class="app-grid-coll-container">
+            <div class="app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter">
+              <h6>Direction</h6>
+              <p>
+                <b>Nadia Cao</b>
+                <br/>Directrice
+              </p>
+
+              <h6>Equipe</h6>
+              <p>
+                <b>Pauline Dellacherie</b>
+                <br/>Collaboratrice
+                <b><br/>Nicolas Bassand</b>
+                <br/>Collaborateur
+              </p>
+            </div>
+            <div class="app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter">
+              <h6>Conseil de Fondation</h6>
+
+              <p>
+                <b>Bruno Marchand</b>
+                <br/>Président
+
+                <b><br>Luca Pattaroni</b>
+                <br/>Vice-président
+
+                <b><br>Nicolas Dzierlatka</b>
+                <br/>Secrétaire
+
+                <b><br>Marc Maugué</b>
+                <br/>Membre
+
+                <b><br>Jacques Roulet</b>
+                <br/>Conseiller
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
 
       <div class="app-grid-coll-container">
         <a class="v-index__mailto app-grid-coll-container app-grid-coll-container--center app-grid-coll-container--direction-column"
@@ -56,7 +104,9 @@
         </a>
       </div>
 
-      <div class="app-grid-coll-container app-grid-coll-container--center">
+      <div class="app-grid-coll-container app-grid-coll-container--center"
+           style="background: #FFE103;"
+      >
         <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24 app-grid-with-gutter">
           <InfomaniakForm/>
         </div>
@@ -103,12 +153,18 @@ useSeoMeta({
   position: absolute;
 }
 
-.v-index {
-  padding-bottom: 25vh;
-}
-
 .v-index__content {
   padding-bottom: 2rem;
+  position: relative;
+}
+
+.v-index__content__bg {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .v-index__mailto {
@@ -140,5 +196,9 @@ useSeoMeta({
     color: #B99A6D;
     margin: 0;
   }
+}
+
+.categories-section__infos__text {
+  margin-top: 1rem;
 }
 </style>

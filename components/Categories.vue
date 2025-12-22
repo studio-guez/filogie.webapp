@@ -499,3 +499,14 @@
 <script>
 
 </script>
+
+<style scoped>
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

@@ -19,7 +19,7 @@
                value="19771"
         >
         <div class="app-grid-coll-container app-grid-coll-container--center">
-          <div class="v-infomaniak-form__input-mail app-grid-coll-18-24">
+          <div class="v-infomaniak-form__input-mail app-grid-coll-24-24">
             <input type="email"
                    name="inf[1]"
                    data-inf-meta="1"
@@ -28,21 +28,19 @@
                    placeholder="Email *"
             >
           </div>
-          <div class="v-infomaniak-form__submit app-grid-coll-6-24">
-            <input type="submit"
-                   name=""
-                   value="Valider"
-            >
-          </div>
-
-          <div class="app-grid-coll-18-24"></div>
-          <div class="v-infomaniak-form__recapcha app-grid-coll-18-24 app-grid-coll-reg-6-24">
+          <div class="v-infomaniak-form__recapcha app-grid-coll-24-24 app-grid-coll-reg-6-24">
             <label data-mcaptcha_url="https://captcha.infomaniak.com/widget/?sitekey=wKJaAigS1e48fWgqtjvg5w7rKA6QIwmy"
                    for="mcaptcha__token" id="mcaptcha__token-label">
               <input type="text" name="mcaptcha__token" id="mcaptcha__token"/>
             </label>
             <div id="mcaptcha__widget-container"></div>
             <div ref="jsContainer"></div>
+          </div>
+          <div class="v-infomaniak-form__submit app-grid-coll-24-24 app-grid-coll-reg-6-24">
+            <input type="submit"
+                   name=""
+                   value="Valider"
+            >
           </div>
         </div>
       </form>
@@ -73,10 +71,15 @@ onMounted(() => {
 
 <style lang="scss" scoped >
 .v-infomaniak-form {
-  background: #FFE103;
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 1rem;
+}
+
+h3 {
+  text-align: center;
+  width: 100%;
+  max-width: none;
 }
 
 #mcaptcha__widget-container {
@@ -99,6 +102,8 @@ onMounted(() => {
 }
 
 .v-infomaniak-form__submit {
+  padding-top: 1rem;
+
   input {
     display: block;
     width: 100%;
@@ -112,6 +117,14 @@ onMounted(() => {
 
 .v-infomaniak-form__recapcha {
   padding-top: 1rem;
+  width: 10rem;
+  overflow: hidden;
+  height: 3rem;
+}
+
+#mcaptcha__widget-container {
+  width: 18rem;
+  height: 2rem;
 }
 
 

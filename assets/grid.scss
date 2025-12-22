@@ -16,6 +16,10 @@
   &.app-grid-coll-container--center {
     justify-content: center;
   }
+
+  &.app-grid-coll-container--direction-column {
+    flex-direction: column;
+  }
 }
 
 .app-grid-coll-0-24  {display: none}

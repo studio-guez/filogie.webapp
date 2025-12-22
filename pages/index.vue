@@ -1,49 +1,15 @@
 <template>
     <section class="v-index"
     >
-      <video class="v-index__video"
-             src="/videos/3001-FILOGIE_animation_bandeau_HD.mp4"
-             muted
-             loop
-             autoplay
-             playsinline
-      />
+      <div class="v-index__header">
+        <div class="v-index__header__logo app-grid-with-gutter">
+          Filogie
+        </div>
+        <img src="/header_bg/Image_AI_01.png" class="v-index__header__bg">
+      </div>
 
       <div class="v-index__content app-grid-coll-container">
-        <div class="app-grid-coll-0-24 app-grid-coll-reg-2-24 v-index__content__order-3"></div>
-        <div class="app-grid-coll-24-24 app-grid-coll-reg-6-24 app-grid-with-gutter v-index__content__order-4">
-          <div class="app-first-and-last-child-remove-margin" style="margin-top: 1rem">
-            <h6>Direction</h6>
-
-            <p class="app-text-small"
-               style="padding-left: 1rem;"
-            >
-              <b>Nadia Cao</b>
-              <br/>Directrice
-            </p>
-
-            <h6>Conseil de Fondation</h6>
-
-            <p class="app-text-small"
-               style="padding-left: 1rem;"
-            >
-              <b>Bruno Marchand</b>
-              <br/>Président
-
-              <b><br>Luca Pattaroni</b>
-              <br/>Vice-président
-
-              <b><br>Nicolas Dzierlatka</b>
-              <br/>Secrétaire
-
-              <b><br>Marc Maugué</b>
-              <br/>Membre
-
-              <b><br>Jacques Roulet</b>
-              <br/>Conseiller
-            </p>
-          </div>
-        </div>
+        <div class="app-grid-coll-0-24 app-grid-coll-reg-6-24 app-grid-with-gutter"></div>
         <div class="app-grid-coll-0-24 app-grid-coll-reg-0-24"></div>
         <div class="app-grid-coll-24-24 app-grid-coll-reg-14-24 app-grid-with-gutter">
           <div style="margin-top: 1rem" class="app-first-and-last-child-remove-margin">
@@ -53,20 +19,45 @@
         </div>
       </div>
 
-      <div class="app-grid-coll-container">
-        <div class="app-grid-coll-0-24 app-grid-coll-reg-2-24"></div>
-        <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24 app-grid-with-gutter">
-          <a class="v-index__mailto app-grid-coll-container app-grid-coll-container--center"
-             href="mailto:info@filogie.ch"
-          >
-            <div class="v-index__mailto__text">
-              <h4>Vous avez des questions&nbsp;?
-              <br>Vous pouvez nous écrire à cette adresse&nbsp;
-              </h4>
-            </div>
-            <button class="v-index__mailto__button">info@filogie.ch</button>
-          </a>
+      <div class="app-grid-coll-container categories-section">
+        <div class="categories-section__infos app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter">
+          <div class="categories-section__infos__titles">
+            <h4>
+              Prospectif
+            </h4>
+            <h4>
+              Opératoire
+            </h4>
+            <h4>
+              Diffusion
+            </h4>
+          </div>
+          <div class="categories-section__infos__text">
+            <p>Le volet prospectif et de connaissance de Filogie constitue un espace d’observation, d’analyse et d’expérimentation au service des enjeux du logement. En mobilisant des données fiables et des outils de visualisation innovants, il permet d’anticiper les évolutions démographiques, économiques ou technologiques qui façonneront les besoins en habitat. Cette approche prospective vise à éclairer les décisions publiques et privées, tout en nourrissant une vision à long terme du développement résidentiel abordable.</p>
+            <p>Au croisement de la recherche et de l’innovation, la fondation soutient la production de connaissances nouvelles et la mise à l’épreuve d’idées audacieuses pour anticiper l’évolution de la société. Des projets de recherche appliquée explorent les transitions en cours : modes de vie émergents, technologies constructives, logiques de durabilité ou modèles économiques alternatifs. Des laboratoires d’innovation permettent de tester des concepts et de prototyper des solutions concrètes, dans une logique d’ouverture et de co-création.</p>
+          </div>
+        </div>
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24">
+          <Categories/>
+        </div>
+      </div>
 
+      <div class="app-grid-coll-container">
+        <a class="v-index__mailto app-grid-coll-container app-grid-coll-container--center app-grid-coll-container--direction-column"
+           href="mailto:info@filogie.ch"
+        >
+          <div class="v-index__mailto__text app-first-and-last-child-remove-margin">
+            <h4>Vous avez des questions&nbsp;?
+              <br>Vous pouvez nous écrire à cette adresse&nbsp;
+            </h4>
+          </div>
+          <button style="margin-top: 1rem"
+                  class="v-index__mailto__button">info@filogie.ch</button>
+        </a>
+      </div>
+
+      <div class="app-grid-coll-container app-grid-coll-container--center">
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24 app-grid-with-gutter">
           <InfomaniakForm/>
         </div>
       </div>
@@ -92,32 +83,24 @@ useSeoMeta({
 <style lang="scss" scoped >
 @use '@/assets/_scss-params';
 
-.v-index {
-  padding-top: 22vw;
+.v-index__header {
+  background: white;
 }
 
-.v-index__video {
+.v-index__header__bg {
   display: block;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+  height: auto;
+  position: relative;
 }
 
-.v-index__content__order-3 {
-  order: 3;
-
-  @media (min-width: scss-params.$app-breakpoint-sm) {
-    order: initial;
-  }
-}
-
-.v-index__content__order-4 {
-  order: 4;
-
-  @media (min-width: scss-params.$app-breakpoint-sm) {
-    order: initial;
-  }
+.v-index__header__logo {
+  width: calc(100%/12 * 5);
+  font-size: 12.5vw;
+  line-height: 2em;
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
 }
 
 .v-index {
@@ -129,8 +112,14 @@ useSeoMeta({
 }
 
 .v-index__mailto {
+  background: white;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.v-index__mailto__text {
+  text-align: center;
 }
 
 .v-index__mailto__button {
@@ -140,5 +129,16 @@ useSeoMeta({
   height: 2rem;
   padding: 0 1rem;
   border-radius: 1rem;
+}
+
+.categories-section {
+  background: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  h4 {
+    color: #B99A6D;
+    margin: 0;
+  }
 }
 </style>

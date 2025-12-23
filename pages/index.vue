@@ -209,15 +209,41 @@ useSeoMeta({
   background: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.categories-section__infos__titles {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: sticky;
+  top: .5rem;
+
 
   h4 {
     color: #B99A6D;
     margin: 0;
     user-select: none;
     cursor: pointer;
+    background: #EAE0D2;
+    border-radius: 2rem;
+    padding: .25rem .5rem;
 
     &.is-active {
       color: black;
+
+    }
+  }
+
+  @media (min-width: scss-params.$app-breakpoint-sm) {
+    gap: 0;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+
+    h4 {
+      padding: 0;
+      background: none;
     }
   }
 }

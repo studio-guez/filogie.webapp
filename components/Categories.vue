@@ -1,6 +1,5 @@
 <template>
   <svg id="uuid-85de6da7-b953-4689-8ae0-950993c8e113" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 701"
-       @mouseout="setActiveCategory(null)"
   >
     <path class="category" :class="{'is-active': activeCategory === 'diffusion'}" @mouseover="setActiveCategory('diffusion')"  @click="setActiveCategory('diffusion')"   id="uuid-cb7a8fda-c917-4b73-a642-47d3170f6d25" data-name="card_diffusion" d="M801.1619873046875,571.64898681640625l-61.15301513671875-444.335983276367188-199.2449951171875,27.422988891601562-18.33599853515625,218.548004150390625-69.269989013671875-5.81201171875,120.466033935546875,69.560028076171875-91.211029052734375,157.998992919921875,2.766998291015625,20.114013671875,315.98199462890625-43.49603271484375Z" fill="#b99a6d"/>
     <path class="category" :class="{'is-active': activeCategory === 'operation'}" @mouseover="setActiveCategory('operation')"  @click="setActiveCategory('operation')"   id="uuid-b41e2249-d99d-46bd-a0f8-93dbca32cf6a" data-name="card_operation" d="M75.066001892089844,335.743988037109375l.783500671386719-9.36199951171875L0,457.77099609375l421.2349853515625,243.22900390625,61.178009033203125-105.968994140625-31.342987060546875-227.73199462890625-376.004005432128906-31.555023193359375Z" fill="#b8996e"/>

@@ -2,6 +2,13 @@
     <section class="v-index"
     >
       <div class="v-index__header">
+        <div class="v-index__header__baseline app-text-small">
+          <div>
+            Fondation Immobilière pour repenser le Logement
+            <br>par l’Innovation et l’Expérimentation
+          </div>
+        </div>
+
         <div class="v-index__header__logo app-grid-with-gutter">
           Filogie
         </div>
@@ -171,13 +178,41 @@ useSeoMeta({
 
 .v-index__header {
   background: white;
+  position: relative;
+  aspect-ratio: 375/109;
+}
+
+.v-index__header__baseline {
+  position: sticky;
+  height: 2rem;
+  top: 0;
+  right: 0;
+  padding: .25rem;
+  background: #FFE103;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+  z-index: 5;
+
+  @media (min-width: scss-params.$app-breakpoint-sm) {
+    width: calc(100% / 12 * 8 - 1rem);
+    margin-left: calc(100% / 12 * 4 + 1rem);
+  }
 }
 
 .v-index__header__bg {
   display: block;
   width: 100%;
   height: auto;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .v-index__header__logo {
@@ -186,7 +221,14 @@ useSeoMeta({
   line-height: 2em;
   pointer-events: none;
   user-select: none;
-  position: absolute;
+  position: relative;
+  z-index: 0;
+
+  @media (min-width: scss-params.$app-breakpoint-sm) {
+    transform: translate(0, -50%);
+    top: 50%;
+    position: absolute;
+  }
 }
 
 .v-index__content {

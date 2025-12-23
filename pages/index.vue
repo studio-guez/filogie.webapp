@@ -38,7 +38,7 @@
               Diffusion
             </h4>
           </div>
-          <div class="categories-section__infos__text app-grid-with-gutter">
+          <div class="categories-section__infos__text categories-section__infos__text--desktop app-grid-with-gutter">
             <template v-if="activeCategory === 'prospectif'">
               <p class="app-text-small">Le volet prospectif et de connaissance de Filogie constitue un espace d’observation, d’analyse et d’expérimentation au service des enjeux du logement. En mobilisant des données fiables et des outils de visualisation innovants, il permet d’anticiper les évolutions démographiques, économiques ou technologiques qui façonneront les besoins en habitat. Cette approche prospective vise à éclairer les décisions publiques et privées, tout en nourrissant une vision à long terme du développement résidentiel abordable.</p>
               <p class="app-text-small">Au croisement de la recherche et de l’innovation, la fondation soutient la production de connaissances nouvelles et la mise à l’épreuve d’idées audacieuses pour anticiper l’évolution de la société. Des projets de recherche appliquée explorent les transitions en cours : modes de vie émergents, technologies constructives, logiques de durabilité ou modèles économiques alternatifs. Des laboratoires d’innovation permettent de tester des concepts et de prototyper des solutions concrètes, dans une logique d’ouverture et de co-création.</p>
@@ -56,6 +56,24 @@
         <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24 app-grid-with-gutter">
           <Categories/>
         </div>
+
+        <div class="categories-section__infos categories-section__infos--mobil app-grid-coll-24-24 app-grid-coll-reg-8-24">
+          <div class="categories-section__infos__text app-grid-with-gutter">
+            <template v-if="activeCategory === 'prospectif'">
+              <p class="app-text-small">Le volet prospectif et de connaissance de Filogie constitue un espace d’observation, d’analyse et d’expérimentation au service des enjeux du logement. En mobilisant des données fiables et des outils de visualisation innovants, il permet d’anticiper les évolutions démographiques, économiques ou technologiques qui façonneront les besoins en habitat. Cette approche prospective vise à éclairer les décisions publiques et privées, tout en nourrissant une vision à long terme du développement résidentiel abordable.</p>
+              <p class="app-text-small">Au croisement de la recherche et de l’innovation, la fondation soutient la production de connaissances nouvelles et la mise à l’épreuve d’idées audacieuses pour anticiper l’évolution de la société. Des projets de recherche appliquée explorent les transitions en cours : modes de vie émergents, technologies constructives, logiques de durabilité ou modèles économiques alternatifs. Des laboratoires d’innovation permettent de tester des concepts et de prototyper des solutions concrètes, dans une logique d’ouverture et de co-création.</p>
+            </template>
+            <template v-else-if="activeCategory === 'diffusion'">
+              <p class="app-text-small" >La diffusion vise à faire circuler les idées et relier les acteurs du logement. À travers des publications, conférences et une présence active dans des réseaux locaux et internationaux, la fondation partage ses travaux et renforce le dialogue entre chercheurs, professionnels, administrations et habitants.</p>
+              <p class="app-text-small" >Cet axe comprend également une dimension de sensibilisation citoyenne : campagnes thématiques, débats, collaborations avec associations de quartier pour amplifier la prise de conscience collective sur les enjeux du logement durable. Des outils numériques — site web interactif, plateformes collaboratives — prolongent ce travail en favorisant la transparence et la co-construction entre tous les acteurs.</p>
+            </template>
+            <template v-else-if="activeCategory === 'operation'">
+              <p class="app-text-small" >L'axe opératoire de Filogie traduit la stratégie en action concrète. Il rassemble les initiatives menées sur le terrain pour développer, rénover et gérer des logements abordables : construction de quartiers durables et mixtes, rénovation et reconversion de bâtiments existants, surélévations pour densifier sans étendre.</p>
+              <p class="app-text-small" >L'action s'appuie sur une dynamique partenariale ouverte, en coordination avec les autorités publiques et un large réseau d'acteurs — universités, architectes, entreprises, associations locales. Ce travail collectif permet d'expérimenter de nouvelles manières de concevoir et de réaliser le logement abordable. Un dispositif de suivi et d'évaluation accompagne chaque projet pour mesurer l'impact social et environnemental, recueillir les retours des habitants et ajuster les pratiques en continu.</p>
+            </template>
+          </div>
+        </div>
+
       </div>
 
 
@@ -211,6 +229,14 @@ useSeoMeta({
   padding-bottom: 2rem;
 }
 
+.categories-section__infos--mobil {
+  display: block;
+
+  @media (min-width: scss-params.$app-breakpoint-sm) {
+    display: none;
+  }
+}
+
 .categories-section__infos__titles {
   display: flex;
   gap: .5rem;
@@ -250,5 +276,13 @@ useSeoMeta({
 
 .categories-section__infos__text {
   margin-top: 1rem;
+
+  &.categories-section__infos__text--desktop {
+    display: none;
+
+    @media (min-width: scss-params.$app-breakpoint-sm) {
+      display: block;
+    }
+  }
 }
 </style>

@@ -10,7 +10,7 @@
         </div>
 
         <div class="v-index__header__logo app-grid-with-gutter">
-          Filogie
+          <img src="/2801-FILOGIE_logo.svg" alt="logo FILOGIE"></img>
         </div>
         <img src="/header_bg/Image_AI_01.png" class="v-index__header__bg">
       </div>
@@ -223,6 +223,15 @@ useSeoMeta({
   user-select: none;
   position: relative;
   z-index: 0;
+  padding-right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
   @media (min-width: scss-params.$app-breakpoint-sm) {
     transform: translate(0, -50%);

@@ -329,6 +329,12 @@ useSeoMeta({
       font-size:    1.2rem;
     }
 
+    @media (min-width: scss-params.$app-breakpoint-sm) {
+      background: transparent;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     &.is-active {
       color: black;
 

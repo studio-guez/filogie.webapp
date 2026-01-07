@@ -3,9 +3,8 @@
     >
       <div class="v-index__header">
         <div class="v-index__header__baseline app-text-small">
-          <div>
-            Fondation Immobilière pour repenser le Logement
-            <br>par l’Innovation et l’Expérimentation
+          <div class="v-index__header__baseline__text"
+          >Fondation Immobilière pour repenser le Logement par l’Innovation et l’Expérimentation
           </div>
         </div>
 
@@ -19,7 +18,7 @@
         <img src="/header_bg/Image_AI_02.png" class="v-index__content__bg">
         <div class="app-grid-coll-0-24 app-grid-coll-reg-8-24 app-grid-with-gutter"></div>
         <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24 app-grid-with-gutter">
-          <div style="margin-top: 1rem" class="app-first-and-last-child-remove-margin">
+          <div class="app-first-and-last-child-remove-margin">
             <p>La Fondation Immobilière pour repenser le Logement par l’Innovation et l’Expérimentation (FILOGIE) est née d'une volonté de proposer des solutions de logement adaptées aux enjeux de société contemporains et à venir. Face aux défis croissants liés à la production de logements abordables, durables et inclusifs, FILOGIE se fixe pour mission d’innover dans le domaine de l’habitat, en développant des projets et réalisations répondant à l’évolution des besoins sociaux, économiques et environnementaux.</p>
             <p>Partant du constat que le modèle familial dominant du second après-guerre – celui de la famille nucléaire – bien qu’encore présent, n’est plus majoritaire, FILOGIE s’attache à répondre aux attentes de nouveaux modes de vie et à anticiper les évolutions et les besoins futurs en matière de logement abordable. Afin de favoriser une culture de l’innovation, elle promeut aussi des études prospectives, des publications, ainsi que l’organisation d’événements et de manifestations, lui permettant de produire et de partager des connaissances approfondies sur les enjeux actuels et à venir.</p>
           </div>
@@ -29,21 +28,18 @@
       <div class="app-grid-coll-container categories-section">
         <div class="categories-section__infos app-grid-coll-24-24 app-grid-coll-reg-8-24">
           <div class="categories-section__infos__titles app-grid-with-gutter">
-            <h4 :class="{ 'is-active': activeCategory === 'prospectif' }"
+            <span :class="{ 'is-active': activeCategory === 'prospectif' }"
                 @click="setActiveCategory('prospectif')"
-            >
-              Prospectif
-            </h4>
-            <h4 :class="{ 'is-active': activeCategory === 'operation' }"
+            >Prospectif
+            </span>
+            <span :class="{ 'is-active': activeCategory === 'operation' }"
                 @click="setActiveCategory('operation')"
-            >
-              Opératoire
-            </h4>
-            <h4 :class="{ 'is-active': activeCategory === 'diffusion' }"
+            >Opératoire
+            </span>
+            <span :class="{ 'is-active': activeCategory === 'diffusion' }"
                 @click="setActiveCategory('diffusion')"
-            >
-              Diffusion
-            </h4>
+            >Diffusion
+            </span>
           </div>
           <div class="categories-section__infos__text categories-section__infos__text--desktop app-grid-with-gutter">
             <template v-if="activeCategory === 'prospectif'">
@@ -84,44 +80,41 @@
       </div>
 
 
-      <div class="app-grid-coll-container">
+      <div class="app-grid-coll-container v-index__team-member">
         <div class="app-grid-coll-0-24 app-grid-coll-reg-8-24"/>
         <div class="app-grid-coll-24-24 app-grid-coll-reg-16-24">
           <div class="app-grid-coll-container">
-            <div class="app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter">
+            <div class="app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter app-first-and-last-child-remove-margin">
               <h6>Direction</h6>
-              <p>
-                <b>Nadia Cao</b>
-                <br/>Directrice
-              </p>
+
+              <h5>Nadia Cao</h5>
+              <p>Directrice</p>
 
               <h6>Equipe</h6>
-              <p>
-                <b>Pauline Dellacherie</b>
-                <br/>Collaboratrice
-                <b><br/>Nicolas Bassand</b>
-                <br/>Collaborateur
-              </p>
+
+              <h5>Pauline Dellacherie</h5>
+              <p>Collaboratrice</p>
+
+              <h5>Nicolas Bassand</h5>
+              <p>Collaborateur</p>
             </div>
             <div class="app-grid-coll-24-24 app-grid-coll-reg-8-24 app-grid-with-gutter">
               <h6>Conseil de Fondation</h6>
 
-              <p>
-                <b>Bruno Marchand</b>
-                <br/>Président
+              <h5>Bruno Marchand</h5>
+              <p>Président</p>
 
-                <b><br>Luca Pattaroni</b>
-                <br/>Vice-président
+              <h5>Luca Pattaroni</h5>
+              <p>Vice-président</p>
 
-                <b><br>Nicolas Dzierlatka</b>
-                <br/>Secrétaire
+              <h5>Nicolas Dzierlatka</h5>
+              <p>Secrétaire</p>
 
-                <b><br>Marc Maugué</b>
-                <br/>Membre
+              <h5>Marc Maugué</h5>
+              <p>Membre</p>
 
-                <b><br>Jacques Roulet</b>
-                <br/>Conseiller
-              </p>
+              <h5>Jacques Roulet</h5>
+              <p>Conseiller</p>
             </div>
           </div>
         </div>
@@ -132,23 +125,24 @@
 
 
       <div class="app-grid-coll-container">
-        <a class="v-index__mailto app-grid-coll-container app-grid-coll-container--center app-grid-coll-container--direction-column"
-           href="mailto:info@filogie.ch"
+        <div class="v-index__mailto app-grid-coll-container app-grid-coll-container--center app-grid-coll-container--direction-column"
+
         >
           <div class="v-index__mailto__text app-first-and-last-child-remove-margin">
-            <h4>Vous avez des questions&nbsp;?
+            <h6>Vous avez des questions&nbsp;?
               <br>Vous pouvez nous écrire à cette adresse&nbsp;
-            </h4>
+            </h6>
           </div>
-          <button style="margin-top: 1rem"
-                  class="v-index__mailto__button">info@filogie.ch</button>
-        </a>
+          <a class="v-index__mailto__button app-text-small"
+             href="mailto:info@filogie.ch"
+          >info@filogie.ch</a>
+        </div>
       </div>
 
       <div class="app-grid-coll-container app-grid-coll-container--center"
            style="background: #FFE103;"
       >
-        <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24 app-grid-with-gutter">
+        <div class="app-grid-coll-24-24 app-grid-coll-reg-20-24">
           <InfomaniakForm/>
         </div>
       </div>
@@ -183,8 +177,8 @@ useSeoMeta({
 }
 
 .v-index__header__baseline {
-  position: sticky;
-  height: 2rem;
+  position: fixed;
+  //height: 2rem;
   top: 0;
   right: 0;
   padding: .25rem;
@@ -205,7 +199,13 @@ useSeoMeta({
   }
 }
 
+.v-index__header__baseline__text {
+  max-width: 25em;
+}
+
 .v-index__header__bg {
+  user-select: none;
+  pointer-events: none;
   display: block;
   width: 100%;
   height: auto;
@@ -221,11 +221,14 @@ useSeoMeta({
   line-height: 2em;
   pointer-events: none;
   user-select: none;
-  position: relative;
   z-index: 0;
   padding-right: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top:    .5rem;
+  padding-bottom: .5rem;
+  position: absolute;
+  top: 100%;
+  transform: translate(0, -100%);
+
 
   img {
     display: block;
@@ -236,16 +239,23 @@ useSeoMeta({
   @media (min-width: scss-params.$app-breakpoint-sm) {
     transform: translate(0, -50%);
     top: 50%;
-    position: absolute;
   }
 }
 
 .v-index__content {
+  padding-top:    2rem;
   padding-bottom: 2rem;
   position: relative;
+
+  @media (min-width: scss-params.$app-breakpoint-xs) {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .v-index__content__bg {
+  user-select: none;
+  pointer-events: none;
   position: absolute;
   display: block;
   top: 0;
@@ -257,8 +267,8 @@ useSeoMeta({
 .v-index__mailto {
   background: white;
   align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
 }
 
 .v-index__mailto__text {
@@ -269,15 +279,21 @@ useSeoMeta({
   display: block;
   background: #FFE103;
   border: none;
-  height: 2rem;
-  padding: 0 1rem;
+  padding: .15rem 1rem .25rem;
   border-radius: 1rem;
+  font-weight: 600;
+  margin-top: .5rem
 }
 
 .categories-section {
   background: white;
-  padding-top: 2rem;
+  padding-top:    2rem;
   padding-bottom: 2rem;
+
+  @media (min-width: scss-params.$app-breakpoint-xs) {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .categories-section__infos--mobil {
@@ -297,14 +313,21 @@ useSeoMeta({
   top: .5rem;
 
 
-  h4 {
+  span {
+    font-weight: 500;
+    line-height:  1.1em;
+    font-size:    .8rem;
     color: #B99A6D;
     margin: 0;
     user-select: none;
     cursor: pointer;
-    background: #EAE0D2;
+    background: hsl(35, 36%, 92%);
     border-radius: 2rem;
     padding: .25rem .5rem;
+
+    @media (min-width: scss-params.$app-breakpoint-xs) {
+      font-size:    1.2rem;
+    }
 
     &.is-active {
       color: black;
@@ -334,6 +357,16 @@ useSeoMeta({
     @media (min-width: scss-params.$app-breakpoint-sm) {
       display: block;
     }
+  }
+}
+
+.v-index__team-member {
+  padding-top:    2rem;
+  padding-bottom: 2rem;
+
+  @media (min-width: scss-params.$app-breakpoint-xs) {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
   }
 }
 </style>

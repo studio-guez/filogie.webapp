@@ -2,7 +2,7 @@
 
   <section class="v-infomaniak-form app-first-and-last-child-remove-margin"
   >
-    <h3>Laissez vos coordonnées pour recevoir nos informations</h3>
+    <h5>Laissez vos coordonnées pour recevoir nos informations</h5>
       <form method="post"
             action="https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/19771/submit"
             >
@@ -70,16 +70,19 @@ onMounted(() => {
 
 
 <style lang="scss" scoped >
+@use '@/assets/_scss-params';
+
 .v-infomaniak-form {
   box-sizing: border-box;
   padding: 1rem;
-  border-radius: 1rem;
+  background: #FFE103;
 }
 
-h3 {
+h5 {
   text-align: center;
   width: 100%;
   max-width: none;
+  margin-bottom: 1rem;
 }
 
 #mcaptcha__widget-container {
@@ -102,7 +105,7 @@ h3 {
 }
 
 .v-infomaniak-form__submit {
-  padding-top: 1rem;
+  padding-top: .25rem;
 
   input {
     display: block;
@@ -112,14 +115,26 @@ h3 {
     border-radius: 1rem;
     color: black;
     background-color: #BFA379;
+    max-width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: scss-params.$app-breakpoint-sm) {
+    padding-top: 1rem;
   }
 }
 
 .v-infomaniak-form__recapcha {
-  padding-top: 1rem;
+  padding-top: .25rem;
   width: 10rem;
   overflow: hidden;
-  height: 3rem;
+  height: 2.25rem;
+
+  @media (min-width: scss-params.$app-breakpoint-sm) {
+    padding-top: 1rem;
+    height: 3rem;
+  }
 }
 
 #mcaptcha__widget-container {

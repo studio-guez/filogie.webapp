@@ -64,5 +64,5 @@ Run these inside the Docker container (no local Node/npm required):
 |---|---|
 | `docker compose run --rm web npm run build` | Build for production (Node server) |
 | `docker compose run --rm web npm run generate` | Generate a static site |
-| `docker compose run --rm web npm run preview` | Preview the production build |
+| `docker compose run --rm -p 3000:3000 web npm run preview` | Preview the production build at `http://localhost:3000` |
 | `docker compose run --rm web npm run build.github.page` | Generate and export to `docs/` for GitHub Pages |

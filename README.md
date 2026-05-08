@@ -1,75 +1,68 @@
-# Nuxt Minimal Starter
+# FILOGIE — Web Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Website for **FILOGIE** (Fondation Immobilière pour repenser le Logement par l'Innovation et l'Expérimentation), a Swiss foundation dedicated to developing affordable, sustainable, and inclusive housing. The site presents the foundation's three axes of work — prospective research, operational projects, and knowledge diffusion — alongside contact and partnership information.
 
-## Setup
+Built with **Nuxt 3** (SPA mode, SSR disabled), **Vue 3**, and **SCSS**.
 
-Make sure to install dependencies:
+---
 
-```bash
-# npm
-npm install
+## Local Development with Docker
 
-# pnpm
-pnpm install
+### Prerequisites
 
-# yarn
-yarn install
+- [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed on your machine.
 
-# bun
-bun install
-```
+### Steps
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+**1. Clone the repository**
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+git clone https://github.com/studio-guez/filogie.webapp.git
+cd filogie.webapp
 ```
 
-## Production
-
-Build the application for production:
+**2. Start the development container**
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+docker compose up
 ```
 
-Locally preview production build:
+This will:
+- Build the Docker image using `Dockerfile.dev`
+- Install all npm dependencies inside the container
+- Start the Nuxt dev server with hot-module replacement
+
+> The `.nuxt` and `.output` directories are automatically wiped on every container start, so you always get a clean build cache.
+
+If you update `package.json` or `Dockerfile.dev`, rebuild the image first:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+docker compose up --build
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+**3. Open the app in your browser**
+
+```
+http://localhost:3000
+```
+
+The source files are mounted as a volume, so any changes you make locally are reflected immediately in the browser without restarting the container.
+
+### Stopping the container
+
+```bash
+docker compose down
+```
+
+---
+
+## Other Scripts
+
+Run these inside the Docker container (no local Node/npm required):
+
+| Command | Description |
+|---|---|
+| `docker compose run --rm web npm run build` | Build for production (Node server) |
+| `docker compose run --rm web npm run generate` | Generate a static site |
+| `docker compose run --rm -p 3000:3000 web npm run preview` | Preview the production build at `http://localhost:3000` |
+| `docker compose run --rm web npm run build.github.page` | Generate and export to `docs/` for GitHub Pages |

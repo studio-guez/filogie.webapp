@@ -113,6 +113,12 @@
               <h5>Marc Maugué</h5>
               <p>Membre</p>
 
+              <h5>Ariane Widmer</h5>
+              <p>Membre</p>
+
+              <h5>Valérie Défago-Gaudin</h5>
+              <p>Membre</p>
+
               <h5>Jacques Roulet</h5>
               <p>Conseiller</p>
             </div>

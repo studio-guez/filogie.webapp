@@ -32,6 +32,14 @@ This will:
 - Install all npm dependencies inside the container
 - Start the Nuxt dev server with hot-module replacement
 
+> The `.nuxt` and `.output` directories are automatically wiped on every container start, so you always get a clean build cache.
+
+If you update `package.json` or `Dockerfile.dev`, rebuild the image first:
+
+```bash
+docker compose up --build
+```
+
 **3. Open the app in your browser**
 
 ```

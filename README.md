@@ -2,7 +2,7 @@
 
 > [!WARNING]
 > This repository is archived and no longer maintained. It contains an older version of the Filogie website.
-> It has been replaced by [studio-guez/filogie](https://github.com/studio-guez/filogie).
+> It has been replaced by [studio-guez/filogie.website](https://github.com/studio-guez/filogie.website).
 
 The instructions below are kept for reference only.
 

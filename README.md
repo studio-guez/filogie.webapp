@@ -1,4 +1,11 @@
-# FILOGIE — Web Application
+# Filogie webapp (archived)
+
+> [!WARNING]
+> This repository is archived and no longer maintained. It contains an older version of the Filogie website.
+> It has been replaced by [studio-guez/filogie](https://github.com/studio-guez/filogie).
+
+The instructions below are kept for reference only.
+
 
 Website for **FILOGIE** (Fondation Immobilière pour repenser le Logement par l'Innovation et l'Expérimentation), a Swiss foundation dedicated to developing affordable, sustainable, and inclusive housing. The site presents the foundation's three axes of work — prospective research, operational projects, and knowledge diffusion — alongside contact and partnership information.
 
